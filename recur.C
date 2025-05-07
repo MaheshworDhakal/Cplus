@@ -12,6 +12,7 @@ int main()
     printf("the fibonacci series is :\n");
     if(term>=1)
     {
+
         printf("%d\t",first_term); 
     }
     if(term>=2)
