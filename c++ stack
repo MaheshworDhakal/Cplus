@@ -1,0 +1,124 @@
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+#define Size 5
+class stack
+{
+    private:
+      int mystack[Size];
+      int top ;
+
+    public:
+     void initial()
+      {
+        top=-1;
+
+      } 
+     void push(int data)
+     {
+        if(top==Size-1)
+        {
+            cout<<"stack overflow"<<endl;
+
+        }
+        else
+        {
+            top++;
+            mystack[top]=data;
+            cout<<data<<" is pushed sucessfully"<<endl;
+
+        }
+     }
+    void pop()
+    {
+        if(top==-1)
+        {
+            cout<<"stack underflow"<<endl;
+
+        }
+        else
+        {
+            top=top-1;
+            cout<<mystack[top]<< " is poped sucessfully"<<endl;
+
+
+        }
+    } 
+    void peek()
+    {
+        if(top==-1)
+        {
+            cout<<"stack is empty"<<endl;
+
+        }
+        else
+        {
+            cout<<"topmost element "<<mystack[top]<<endl;
+
+        }
+    }
+    void display()
+    {
+        int i;
+        if (top==-1)
+        {
+            cout<<"stack is empty "<<endl;
+        }
+        else
+        {
+            for(i=0;i<=top;i++)
+            {
+                cout<<mystack[i];
+            }
+        }
+    }
+};
+int main()
+{
+    stack s;
+    s.initial();
+    int choice;
+    int data;
+    while(1)
+    {
+        cout<<"enter 1 for push "<<endl;
+        cout<<"enter 2 for pop"<<endl;
+        cout<<"enter 3 for peek "<<endl;
+        cout<<<"enter 4 for display"<<endl;
+        cout<<<"enter 5 for exit "<<endl;
+        cin>>choice;
+        switch(choice)
+        {
+            case 1:
+            cout<<"enter the data"<<endl;
+            cin>>data;
+            s.push();
+            break;
+
+            case 2:
+            s.pop();
+            break;
+
+            case 3:
+            s.peek();
+            break;
+
+            case 4:
+            s.display();
+            break;
+
+            case 5:
+            exit();
+            break;
+
+            default :
+            cout<<"invalid option"<<endl;
+
+
+        }
+
+
+    }
+    return 0;
+
+}
