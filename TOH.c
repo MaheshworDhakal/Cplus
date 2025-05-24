@@ -8,7 +8,7 @@ int main()
     TOH(n,'O','D','I');
     return 0;
 }
-TOH(int n, char A, char B, char C)
+ int TOH(int n, char A, char B, char C)
 {
     if(n>0)
      {
