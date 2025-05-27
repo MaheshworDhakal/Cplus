@@ -248,7 +248,8 @@ class department :private engineer
     void dispaly()
 
     {
-         engineer::dispaly();
+         engineer::dispaly(); //since isthe private in this can so in order to excess int the further class we do thisd
+
         cout<<"enter your department and working year:"<<endl;
         cin>>depart>>year;
     }
