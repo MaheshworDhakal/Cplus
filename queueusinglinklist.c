@@ -8,6 +8,8 @@ struct Node {
 
 struct Node* head = NULL;
 
+
+
 void enqueue(int data);
 void dequeue();
 void display();
