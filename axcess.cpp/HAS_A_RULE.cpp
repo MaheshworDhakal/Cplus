@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class human
+class intiger
 {
     private:
     int first;
