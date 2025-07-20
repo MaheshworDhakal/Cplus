@@ -199,3 +199,31 @@ int main() {
     //     // }
 
 
+#include<iostream>
+using namespace std;
+class one
+{
+    private:
+    int * x;
+    public:
+    one(int value)
+    {
+        x= new int;
+        *x=value;
+    }
+    void display()
+    {
+        cout<<"the value of the x is :"<<*x<<endl;
+    }
+    ~ one()
+    {
+        cout<<"destructor called :"<<endl;
+        delete x;
+    }
+
+};
+int main()
+{
+    one o(10);
+    o.display();
+}
