@@ -1,0 +1,1 @@
+my name is maheshwor dhakal opening file by using fstream
